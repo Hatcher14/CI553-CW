@@ -82,7 +82,7 @@ public class Basket extends ArrayList<Product> implements Serializable
         int number = pr.getQuantity();
         fr.format("%-7s",       pr.getProductNum() );
         fr.format("%-14.14s ",  pr.getDescription() );
-        fr.format("(%3d) ",     number );
+        fr.format("(%3d) ",     number);
         fr.format("%s%7.2f",    csign, pr.getPrice() * number );
         fr.format("\n");
         total += pr.getPrice() * number;
